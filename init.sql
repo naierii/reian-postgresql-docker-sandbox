@@ -8,17 +8,17 @@ CREATE TABLE IF NOT EXISTS Users (
 
 CREATE INDEX idx_username ON Users (username);
 
-CREATE TABLE Loans (
+CREATE TABLE IF NOT EXISTS Loans (
     id SERIAL PRIMARY KEY,
     userId INT NOT NULL,
-    loanAmount DECIMAL(15, 2) NOT NULL,
-    interestRate DECIMAL(5, 4) NOT NULL,
+    loanAmount INT NOT NULL,
+    interestRate DECIMAL(5, 2) NOT NULL,
     loanTerm INT NOT NULL,
     startDate DATE NOT NULL,
     FOREIGN KEY (userId) REFERENCES Users(id)
 );
 
-CREATE TABLE Payments (
+CREATE TABLE IF NOT EXISTS Payments (
     paymentId SERIAL PRIMARY KEY,
     loanId INT NOT NULL,
     period INT NOT NULL,
