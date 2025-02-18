@@ -60,19 +60,6 @@ This repository contains the Docker Compose configuration for setting up a local
       - Password: `your_db_password` (replace with your password)
     - Save
 
-6.  **Install Node.js Dependencies (if applicable):**
-
-    If your project has a `package.json` file, run:
-
-    ```bash
-    npm install
-    ```
-
-7.  **Run Your Application:** (Provide specific instructions for your application)
-    ```bash
-    npm start
-    ```
-
 ## Stopping the Database
 
 To stop the database and pgAdmin containers:
@@ -89,4 +76,4 @@ docker-compose down -v
 
 ## Troubleshooting
 
-- Add common issues and their solution here.
+- (To add common issues and their solution here).
