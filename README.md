@@ -11,8 +11,8 @@ This repository contains the Docker Compose configuration for setting up a local
 1.  **Clone the repository:**
 
     ```bash
-    git clone <TODO repository_url>
-    cd <TODO project_directory>
+    git clone https://github.com/naierii/reian-postgresql-docker-sandbox.git
+    cd <your project_directory>
     ```
 
 2.  **Create a `.env` file:**
